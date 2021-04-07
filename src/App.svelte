@@ -3,9 +3,11 @@
   export let date;
 
   onMount(async () => {
-    const res = await fetch("/api/date");
-    const newDate = await res.text();
-    date = newDate;
+
+    //test request of api login
+    const res = await fetch("/api/login");
+    let str_req = await res.text();
+    hmmn = str_req;
   });
 </script>
 
@@ -35,14 +37,8 @@
     <code>/api</code>
     which contains a serverless
     <a href="https://nodejs.org/en/">Node.js</a>
-    function. See
-    <a href="/api/date">
-      <code>api/date</code>
-      for the Date API with Node.js
-    </a>
-    .
+    function.
   </p>
   <br />
-  <h2>The date according to Node.js is:</h2>
-  <p>{date ? date : 'Loading date...'}</p>
+  <p>{hmmn ? hmmn : 'Loading req...'}</p>
 </main>
