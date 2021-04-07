@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  export let date;
+  export let hmmn;
 
   onMount(async () => {
 
