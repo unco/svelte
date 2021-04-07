@@ -16,7 +16,7 @@
     <a href="https://vercel.com/docs" target="_blank" rel="noreferrer noopener">
       Vercel
     </a>
-    !
+    
   </h2>
   <p>
     <a
